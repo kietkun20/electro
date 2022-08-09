@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Electro</title>
+    <link rel="icon" href="./Img/img03.webp">
+    <link rel="stylesheet" href="./bootstrap-5.2.0-beta1-dist/css/bootstrap.min.css">
+    <script src="./bootstrap-5.2.0-beta1-dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="./fontawesome-free-6.1.1-web/css/all.min.css">
+    <script src="./fontawesome-free-6.1.1-web/js/all.min.js"></script>
+    <link rel="stylesheet" href="./electro.css">
+    <link rel="stylesheet" href="./aos-master/dist/aos.css">
+    <script src="./aos-master/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            delay: 50,
+            duration: 1000,
+        });
+    </script>
+</head>
+
+<body>
+    <header>
+        <div class="header-top">
+            <div class="container">
+                <div class="top-info row ">
+                    <ul class="nav info-item col-md-6">
+                        <li>
+                            <a class="nav-link" href="#">
+                                <i class="item-icon fa fa-phone"></i> +021-95-51-84
+                            </a>
+                        </li>
+                        <li>
+                            <a class="nav-link" href="#">
+                                <i class="item-icon fa fa-envelope"></i> email@email.com
+                            </a>
+                        </li>
+                        <li>
+                            <a class="nav-link" href="#">
+                                <i class="item-icon fa fa-map-marker"></i> 1734 Stonecoal Road
+                            </a>
+                        </li>
+                    </ul>
+                    <ul class="nav info-item col-md-6 d-md-flex justify-content-end">
+                        <li>
+                            <a class="nav-link" href="#">
+                                <i class="item-icon fa fa-dollar"></i> USD
+                            </a>
+                        </li>
+                        <li>
+                            <a class="nav-link" href="#">
+                                <i class="item-icon fa fa-user"></i> My Account
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="header-bot">
+            <div class="container">
+                <div class="bot-banner row d-flex align-items-center">
+                    <div class="col-md-3">
+                        <div class="header-logo">
+                            <a href="#"><img src="./Img/img01.webp" alt="logoweb"></a>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="header-search">
+                            <form class="d-flex justify-content-center align-items-center w-100">
+                                <select class="input-select">
+                                    <option value="0">All Categories</option>
+                                    <option value="1">Category 01</option>
+                                    <option value="1">Category 02</option>
+                                </select>
+                                <input class="input w-100" placeholder="Search here">
+                                <button class="search-btn">Search</button>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="col-md-3 mt-3 mb-3">
+                        <div class="header-ctn d-flex justify-content-end">
+                            <div class="ctn-item me-3 d-flex flex-column justify-content-center">
+                                <i class="ctn-icon fa-regular fa-heart"></i>
+                                <div class="ctn-content">Your Wishlist</div>
+                                <div class="ctn-number rounded-circle">2</div>
+                            </div>
+                            <div class="ctn-item d-flex flex-column justify-content-center dropdown me-3" id="yourcart" data-bs-toggle="dropdown" aria-expanded="false">
+                                <i class="ctn-icon fa-solid fa-cart-shopping"></i>
+                                <div class="ctn-content">Your Cart</div>
+                                <div class="ctn-number rounded-circle">3</div>
+                                <div class="dropdown-menu ctn-dropdown" aria-labelledby="yourcart">
+                                    <div class="cart-list">
+                                        <div class="cart-shop mb-4 d-flex">
+                                            <div class="cart-shop-item">
+                                                <img src="./Img/img02.webp" width="60px" alt="">
+                                                <div class="cart-shop-item-icon"><i class="fa-solid fa-xmark"></i></div>
+                                            </div>
+                                            <div>
+                                                <b class="name-item">PRODUCT NAME GOES HERE</b>
+                                                <div class="d-flex w-50 justify-content-between">
+                                                    <div>1x</div>
+                                                    <b>$980.00</b>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="cart-shop d-flex">
+                                            <div class="cart-shop-item">
+                                                <img src="./Img/img03.webp" width="60px" alt="">
+                                                <div class="cart-shop-item-icon"><i class="fa-solid fa-xmark"></i></div>
+                                            </div>
+                                            <div>
+                                                <b class="name-item">PRODUCT NAME GOES HERE</b>
+                                                <div class="d-flex w-50 justify-content-between">
+                                                    <div>3x</div>
+                                                    <b>$980.00</b>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <hr>
+                                    <div class="cart-price mb-3">
+                                        <p class="mb-0">4 Item(s) selected</p>
+                                        <b>SUBTOTAL: $2940.00</b>
+                                    </div>
+                                    <div class="btn-group cart-button" style="border-radius: none;" role="group" aria-label="Basic example">
+                                        <button class="btn btn-secondary" style="background: #15161d;">View
+                                            Cart</button>
+                                        <button class="btn btn-secondary" style="background: #d10024;">Checkout <i
+                                                class="fa-solid fa-arrow-right rounded-circle"
+                                                style=" background: #fff; width: 10px; height: 10px; color: #d10024; padding: 3px;"></i></button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="ctn-item d-block d-md-none d-flex flex-column justify-content-center" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
+                                <i class="ctn-icon fa-solid fa-bars"></i>
+                                <div class="ctn-content">Menu</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="header-menu bg-light">
+        <div class="container">
+            <ul class="nav header-menu-item" id="myDIV" style="padding: 10px 0;" class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+                <li class="nav-item ">
+                    <a class="nav-link item-menu active" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link item-menu" href="#">Hot Deals</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link item-menu" href="#">Categories</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link item-menu" href="#">Laptops</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link item-menu" href="#">Smartphones</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link item-menu" href="#">Cameras</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link item-menu" href="#">Accessories</a>
+                </li>
+            </ul>
+        </div>
+        <hr class="d-md-block d-none m-0">
+    </div>
+    <div class="content">
+        <div class="content1">
+            <div class="container">
+                <div class="content1-menu row d-flex justify-content-between">
+                    <div class="col-md-4 col-xs-6 content1-menu-shop">
+                        <img width="100%" src="./Img/img04.webp" alt="">
+                        <div class="content1-menu-info">
+                            <h2 style="color: #FFF;">Laptop <br> Collection
+                            </h2>
+                            <a href="#" style="color: #fff; text-decoration: none;">SHOP NOW<i
+                                    class="fa-solid fa-arrow-right rounded-circle"
+                                    style=" background: #fff; width: 10px; height: 10px; color: #d10024; padding: 3px;"></i></a>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-xs-6 content1-menu-shop">
+                        <img width="100%" src="./Img/img05.webp" alt="">
+                        <div class="content1-menu-info">
+                            <h2 style="color: #FFF;">Accessories <br> Collection
+                            </h2>
+                            <a href="#" style="color: #fff; text-decoration: none;">SHOP NOW<i
+                                    class="fa-solid fa-arrow-right rounded-circle"
+                                    style=" background: #fff; width: 10px; height: 10px; color: #d10024; padding: 3px;"></i></a>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-xs-6 content1-menu-shop">
+                        <img width="100%" src="./Img/img06.webp" alt="">
+                        <div class="content1-menu-info">
+                            <h2 style="color: #FFF;">Cameras <br> Collection
+                            </h2>
+                            <a href="#" style="color: #fff; text-decoration: none;">SHOP NOW<i
+                                    class="fa-solid fa-arrow-right rounded-circle"
+                                    style=" background: #fff; width: 10px; height: 10px; color: #d10024; padding: 3px;"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="content2 mt-5">
+            <div class="container">
+                <div class="content2-menu row d-flex justify-content-between">
+                    <h1 class="col-md-6">NEW PRODUCTS</h1>
+                    <ul class="nav col-md-6 d-flex justify-content-end" style="padding: 10px 0;" class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+                        <li class="nav-item ">
+                            <a class="nav-link item-menu active" href="#">Laptops</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link item-menu" href="#">Smartphones</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link item-menu" href="#">Cameras</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link item-menu" href="#">Accessories</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+
+    </div>
+
+
+    <script>
+        // Add active class to the current button (highlight it)
+        var header = document.getElementById("myDIV");
+        var btns = header.getElementsByClassName("item-menu");
+        for (var i = 0; i < btns.length; i++) {
+            btns[i].addEventListener("click", function() {
+                var current = document.getElementsByClassName("active");
+                if (current.length > 0) {
+                    current[0].className = current[0].className.replace(" active", "");
+                }
+                this.className += " active";
+            });
+        }
+    </script>
+</body>
+
+</html>
